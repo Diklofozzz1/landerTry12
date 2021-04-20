@@ -3,6 +3,8 @@ import {AppBar, Collapse, makeStyles, Toolbar} from "@material-ui/core";
 import {IconButton} from "@material-ui/core";
 import SortIcon from '@material-ui/icons/Sort';
 import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
+import { Link as Scroll } from 'react-scroll'
+
 
 const useStyles = makeStyles((theme)=>({
     root:{
@@ -86,9 +88,12 @@ export default function Header(){
                         <span className={classes.textColorChanger}>Вам к нам!</span>
                     </h1>
 
-                    <IconButton>
-                        <ArrowDownwardIcon  className={classes.arrowDown} />
-                    </IconButton>
+                    <Scroll to="place-to-visit" smooth={true}>
+                        <IconButton>
+                            <ArrowDownwardIcon  className={classes.arrowDown} />
+                        </IconButton>
+                    </Scroll>
+
                 </div>
             </Collapse>
         </div>
