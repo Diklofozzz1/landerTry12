@@ -61,7 +61,7 @@ export default function Header(){
     },[])
 
     return(
-        <div className={classes.root}>
+        <div className={classes.root} id="header">
             <AppBar className={classes.appbar} elevation={0}>
                 <Toolbar className={classes.appWrapper}>
 
@@ -76,7 +76,10 @@ export default function Header(){
                 </Toolbar>
             </AppBar>
 
-            <Collapse in={checked} {...(checked ? { timeout: 3000 } : {})} collapsedHeight={15}>
+            <Collapse in={checked}
+                      {...(checked ? { timeout: 3000 } : {})}
+                      collapsedHeight={15}>
+
                 <div className={classes.midTextContainer}>
 
                     <h1 className={classes.midTitle}>Ищите куда поехать? <br />
