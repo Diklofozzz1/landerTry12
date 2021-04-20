@@ -1,6 +1,7 @@
 import React from "react";
 import {createGenerateClassName, CssBaseline, makeStyles} from "@material-ui/core";
 import Header from "./component/Header";
+import PlaceHolder from "./component/PlaceHolder";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -21,6 +22,7 @@ function App() {
       <div className={classes.root}>
         <CssBaseline />
         <Header />
+        <PlaceHolder />
       </div>
   );
 }
