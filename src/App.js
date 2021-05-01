@@ -6,7 +6,7 @@ import PlaceHolder from "./component/PlaceHolder";
 const useStyles = makeStyles((theme) => ({
     root: {
       minHeight: '100vh',
-      backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/bg.jpg'})`,
+      backgroundImage: 'url(/assets/bg.jpg)',
       backgroundRepeat: 'no-repeat',
       backgroundSize: 'cover'
     },
